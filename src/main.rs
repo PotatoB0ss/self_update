@@ -12,7 +12,7 @@ fn run() -> Result<(), Box<dyn ::std::error::Error>> {
     println!("{:#?}\n", releases);
 
     let status = self_update::backends::github::Update::configure()
-        .repo_owner("jaemk")
+        .repo_owner("PotatoB0ss")
         .repo_name("self_update")
         .bin_name("github")
         .show_download_progress(true)
@@ -37,4 +37,8 @@ fn main() {
         println!("[ERROR] {}", e);
         ::std::process::exit(1);
     }
+}
+
+fn test () {
+    println!("Some func");
 }
